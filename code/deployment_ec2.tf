@@ -1,5 +1,5 @@
 resource "aws_instance" "web_host" {
-  # ec2 have plain text secrets in user data
+  # ec2 have plain text secrets in user data test
   ami           = "${var.ami}"
   instance_type = "t2.nano"
 
@@ -19,11 +19,11 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 EOF
 
   tags = {
-    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
+    git_commit           = "3cefeaaa463c28b7077f620cda77541e1d87900a"
     git_file             = "code/deployment_ec2.tf"
-    git_last_modified_at = "2024-01-26 23:01:56"
-    git_last_modified_by = "tprendervill@paloaltonetworks.com"
-    git_modifiers        = "tprendervill"
+    git_last_modified_at = "2025-03-12 16:36:31"
+    git_last_modified_by = "joustie@gmail.com"
+    git_modifiers        = "joustie/tprendervill"
     git_org              = "Joustie"
     git_repo             = "prisma-cloud-devsecops-workshop"
     yor_name             = "web_host"
